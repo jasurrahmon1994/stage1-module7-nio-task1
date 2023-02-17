@@ -8,11 +8,6 @@ import java.util.List;
 
 
 public class FileReader {
-    public static void main(String[] args) {
-        FileReader fr = new FileReader();
-        File file = new File("src/main/resources/Profile.txt");
-        System.out.println(fr.getDataFromFile(file));
-    }
 
     public Profile getDataFromFile(File file) {
         Profile profile = new Profile();
@@ -42,7 +37,6 @@ public class FileReader {
                     profile.setPhone(Long.parseLong(str[1]));
                     break;
                 default:
-                    System.out.println("false");
                     break;
             }
         }
